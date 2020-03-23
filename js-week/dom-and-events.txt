@@ -1,0 +1,30 @@
+Webpack
+ - bundles our JS code and JS packages. Our JS code is usually separated into different files,
+ and the bundler is responsible for putting it all together.
+
+ - When webpack processes your application, it internally builds a dependency graph
+   which maps every module your project needs and generates one or more bundles.
+
+Browser as an IDE
+ - Integrated Development Environment or Ambiente de Desenvolvimento Integrado
+
+Load JS at the end of the Body to prevent hangups and bugs!
+
+DOM
+  Document Object Model
+  The Document Object Model (DOM) is a cross-platform and language-independent interface that treats an XML or HTML document as a tree structure wherein each node is an object representing a part of the document. The DOM represents a document with a logical tree. Each branch of the tree ends in a node, and each node contains objects. DOM methods allow programmatic access to the tree; with them one can change the structure, style or content of a document. Nodes can have event handlers attached to them. Once an event is triggered, the event handlers get executed.
+
+JavaScript
+  When a web page is loaded, the browser creates a Document Object Model of the page, which is an object oriented representation of an HTML document that acts as an interface between JavaScript and the document itself. This allows the creation of dynamic web pages,[9] because within a page JavaScript can:
+
+ - add, change, and remove any of the HTML elements and attributes
+ - change any of the CSS styles
+ - react to all the existing events
+ - create new events
+
+The browser parses the HTML response and creates the DOM from it.
+
+You can visualize the DOM in the Chrome Inspector, in Elements tab.
+
+wikipedia.org/Tree_(data_structure)
+

@@ -1,0 +1,73 @@
+A few comments on Javascript:
+
+  JavaScript is a dynamic, weakly typed programming language which is compiled at
+  runtime. It can be executed as part of a webpage in a browser or directly on any
+  machine (“host environment”).
+
+  JavaScript was created to make webpages more dynamic (e.g. change content on a
+  page directly from inside the browser). Originally, it was called LiveScript but due to
+  the popularity of Java, it was renamed to JavaScript.
+
+  JavaScript is totally independent from Java and has nothing in common with Java!
+
+Development History:
+
+  JavaScript is born in 1995, and it has a troubled development history until 2005 due to lack of a strong
+  standardization effort. From 2006 onwards, Microsoft and other large companies pool together and begin
+  a very efficient standardization process together with ECMA (European Computer Manufacturers Association),
+  which really helps stabilize and develop the JavaScript ecosystem. As of today, it has never been healthier.
+
+
+Dynamic, interpreted Programming Language:
+
+  -> Not pre-compiled, instead parsed and
+  compiled “on the fly” (e.g. in the browser).
+
+  -> Code evaluated and executed at runtime(as it is being executed).
+
+  -> Code can change at runtime (e.g. type of a
+  variable can change during the running of a program).
+
+  -> A language is dynamically-typed if the type of a variable is checked during run-time.
+  Common examples of dynamically-typed languages includes JavaScript, Objective-C, PHP, Python, Ruby, Lisp, and Tcl.
+
+Weakly Typed Programming Language:
+
+  -> The main difference, roughly speaking,
+  between a strongly typed language and a weakly typed one is that a weakly typed one makes conversions between unrelated types implicitly,
+  while a strongly typed one typically disallows implicit conversions between unrelated types.
+
+  -> Data types are assumed (e.g. assigned to
+  variables) automatically.
+
+  -> You don’t define that some variable has to
+  hold a certain value (e.g. a number).
+  You can just assign a value to a variable, regardless of data-type, just like in Ruby.
+  Ex: number = 14
+      number = "Fourteen"
+    -> Does not matter if it is a string or number.
+
+
+  -> Data types are not set in stone but can
+  change.
+
+WHAT IS JAVASCRIPT GOOD FOR?
+
+  We will learn JavaScript to use it on the Browser Side of things (Front-End), making our Rails apps more dynamic and reactive.
+
+  However, the first classes will be back-end JavaScript, so you can practice syntax and the like beforehand.
+
+  Server side JavaScript is Node.JS, where developers managed to extract the JS engine from the browser and use it anywhere necessary.
+
+  -> JavaScript was invented to create more
+  dynamic websites by executing code in the browser!
+
+  -> JavaScript can manipulate the HTML code,
+  CSS, send background Http requests &
+  much more.
+
+  -> JavaScript CAN’T access the local
+  filesystem, interact with the operating
+  system etc. Node.JS, however, can interact with local files
+  and the Operating System.
+
