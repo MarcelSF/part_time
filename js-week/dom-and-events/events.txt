@@ -1,0 +1,126 @@
+Events are preprogramed for us. They can trigger JS functions making
+our pages reactive.
+
+DOMContentLoaded -> loaded the DOM
+blur -> when an element loses focus
+click -> Mouse click.
+change -> change of value
+focus -> when an element is focused
+keyup -> when you depress a keyboard key.
+mouseover -> place the mouse cursor over an element
+resize -> when the document is resized (think of when a screen is resized)
+scroll -> scroll the page
+submit -> when you submit a form
+touchstart -> for touchscreens
+
+// Events occur on specific objects
+DOMContentLoaded  # document
+blur              # input / textarea
+click             # any visible element
+change            # select
+focus             # any visible element
+keyup             # window / any focused element
+mouseover         # any visible element
+resize            # window
+scroll            # window / any scrollable element
+submit            # form
+touchstart        # for mobile devices
+
+CALLBACKS:
+
+What is a Callback?
+Simply put: A callback is a function that is to be executed after another function has finished executing — hence the name ‘call back’.
+More complexly put: In JavaScript, functions are objects. Because of this, functions can take functions as arguments, and can be returned by other functions.
+Functions that do this are called higher-order functions.
+Any function that is passed as an argument is called a callback function.
+^ That’s a lot of words. Lets look at some examples to break this down a little more.
+
+Why do we need Callbacks?
+For one very important reason — JavaScript is an event driven language. This means that instead of waiting for a response before moving on,
+JavaScript will keep executing while listening for other events.
+
+Callbacks are a way to make sure certain code doesn’t execute until other code has already finished execution.
+
+sources:
+https://codeburst.io/javascript-what-the-heck-is-a-callback-aba4da2deced
+
+https://www.educative.io/edpresso/what-are-callbacks-in-javascript?https://www.educative.io/courses/grokking-the-object-oriented-design-interview?aid=5082902844932096&utm_source=google&utm_medium=cpc&utm_campaign=blog-dynamic&gclid=EAIaIQobChMIvomzjP246AIVQ4CRCh2hQwA-EAAYASAAEgJigfD_BwE
+
+Just like almost everything in JavaScript (except primitive data types),
+functions are an object type.
+
+So like any other object types, functions can be passed to other functions.
+
+When a function is passed as an argument, it is called a callback function.
+This callback function can be invoked inside the function calling it at any point,
+especially when some routine or action has been completed.
+
+Since JavaScript is an event-driven language,
+you can’t just call one function after another and hope both of the functions will execute in the right order.
+
+Instead of waiting for a response, JavaScript keeps on executing,
+while listening for events in the background.
+This is where callbacks prove to be really beneficial since they can be called from inside the called function when the time is right
+e.g. to return some kind of useful data.
+
+ex #1: // try it on your browser:
+
+// define doHomework function with no callback.
+function doHomework(subject) {
+  alert(`Starting my ${subject} homework.`);
+}
+
+// Call it!
+doHomework('math');
+// Alerts: Starting my math homework.
+
+// define function with callback:
+function doHomework(subject, callback) {
+  alert(`Starting my ${subject} homework.`);
+  callback();
+}
+
+// Putting everything together:
+function doHomework(subject, callback) {
+  alert(`Starting my ${subject} homework.`);
+  callback();
+}
+
+// alertFinished will be the callback function of doHomework.
+function alertFinished(){
+  alert('Finished my homework');
+}
+
+doHomework('math', alertFinished);
+
+How do we use it with event listeners?
+
+element.addEventListener(eventType, (event) => {
+  // Do something (callback)
+});
+
+Notice that (event) => {} is an argument of the event listener!
+addEventListener has the eventType and a function as parameters.
+
+Ex #2:
+
+HTML
+<button id="btn">Click here!</button>
+
+JavaScript
+const buttonElement = document.getElementById('btn');
+
+// Add a handler for the 'click' event by providing a callback function.
+// Whenever the element is clicked, a pop-up with "Element clicked!" will
+// appear.
+buttonElement.addEventListener('click', function (event) {
+  alert('Element clicked through function!');
+});
+
+// For compatibility, a non-function object with a `handleEvent` property is
+// treated just the same as a function itself.
+buttonElement.addEventListener('click', {
+  handleEvent: function (event) {
+    alert('Element clicked through handleEvent property!');
+  }
+});

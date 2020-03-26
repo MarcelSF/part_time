@@ -50,6 +50,6 @@ capitalize("wagon");
 
 const greet = (name) => {
   console.log(`Hello, ${capitalize(name)}`) // here we call the capitalize function that we defined on line 40.
-}
+};
 
 greet('milene');

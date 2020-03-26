@@ -27,6 +27,15 @@ const hello = "Hello world"
 // if you try to reassing the value of hello, you will get an error!
 // Thrown: TypeError: Assignment to constant variable.
 
+// Best practice for variables and constants:
+// You should use lowerCamelCase.
+// You can include digits, except at the beggining.
+// You can start with the $ sign.
+// You can start with underscore (_)
+// You SHOULD NOT use snake_case (this is for Ruby and Python)
+// DO NOT use other special characters.
+// DO NOT use key words (ex: let let, or const let, etc)
+
 let fullName = "Andre Ferrer"
 
 fullName = "Milene Cardoso"
