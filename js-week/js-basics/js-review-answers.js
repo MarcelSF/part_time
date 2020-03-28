@@ -6,6 +6,13 @@ console.log("hello world!");
 // how to see the type of something?
 console.log(typeof(1));
 
+// How to change data types?
+Number.parseInt('23', 10); // => 23
+// 10 => An integer between 2 and 36 that represents the radix (the base in mathematical numeral systems) of the string. Be careful—this does not default to 10!
+
+(42).toString();
+// => '42'
+
 // let or const?
 const pi = 3.14;
 let myAge = 32;
