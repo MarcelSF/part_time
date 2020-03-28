@@ -6,8 +6,14 @@
 
 // let or const?
 
-// Defining and Array
+// Defining an Array
 
 // How to use the Each loop?
 
+// Defining an Object
+
+// Reading / setting properties of an Object
+
 // Defining a function
+
+// Logical flow example:

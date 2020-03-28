@@ -53,3 +53,7 @@ const greet = (name) => {
 };
 
 greet('milene');
+
+// It's just really to write less code, and to have the context inside the function equal to the context where the function was called.
+
+// If you declare a function the old way, inside it this will refer to the function's context, and not the context where we called the function
