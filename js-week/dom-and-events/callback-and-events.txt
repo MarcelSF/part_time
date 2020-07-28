@@ -1,5 +1,7 @@
-Events are preprogramed for us. They can trigger JS functions making
+DOM events are preprogramed for us. They can trigger JS functions making
 our pages reactive.
+
+Events are a part of the Document Object Model (DOM) Level 3 and every HTML element contains a set of events which can trigger JavaScript Code.
 
 DOMContentLoaded -> loaded the DOM
 blur -> when an element loses focus
@@ -113,12 +115,14 @@ const buttonElement = document.getElementById('btn');
 // Add a handler for the 'click' event by providing a callback function.
 // Whenever the element is clicked, a pop-up with "Element clicked!" will
 // appear.
+
 buttonElement.addEventListener('click', function (event) {
   alert('Element clicked through function!');
 });
 
 // For compatibility, a non-function object with a `handleEvent` property is
 // treated just the same as a function itself.
+
 buttonElement.addEventListener('click', {
   handleEvent: function (event) {
     alert('Element clicked through handleEvent property!');
